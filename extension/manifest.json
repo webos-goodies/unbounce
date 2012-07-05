@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Unbounce",
+  "version": "1.0",
+  "description": "A chrome extension to disable elastic scrolling on Mac OS X.",
+  "icons": { "128": "icon128.png", "64": "icon64.png", "48": "icon48.png", "16": "icon16.png" },
+  "background": { "scripts": ["background.js"] },
+  "browser_action": {
+    "default_icon": "icon19.png",
+    "default_title": "Click to toggle elastic scrolling for this domain. (reload to take effect)"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js":      ["content.js"]
+    }
+  ],
+  "options_page":"options.html"
+}

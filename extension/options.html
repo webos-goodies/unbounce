@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Unbounce Settings</title>
+  <style>
+	body { font-family: serif; }
+	h1 { text-shadow: 2px 2px 4px #888; }
+	h2 {
+	font-style:italic; border-bottom:solid 2px black;
+	margin:0; text-shadow:2px 2px 1px #ccc;
+	}
+	#main { display:inline-block; margin-left:24px; }
+    #disabled-domains {
+      width:400px; margin:16px 40px 0 16px; border:solid 1px #ccc;
+      border-collapse:collapse;
+    }
+    #disabled-domains tr:nth-child(odd)  { background-color:#fffff0; }
+    #disabled-domains tr:nth-child(even) { background-color:#f0ffff; }
+    #disabled-domains td { border:none; }
+    #disabled-domains td:nth-child(1) { padding: 2px 8px; }
+    #disabled-domains td:nth-child(2) { width:80px; text-align:right; }
+  </style>
+</head>
+<body>
+  <h1><img src="icon64.png"> Options for Unbounce extension</h1>
+
+  <div id="main">
+    <h2>Disabled domains</h2>
+    <table id="disabled-domains">
+    </table>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
